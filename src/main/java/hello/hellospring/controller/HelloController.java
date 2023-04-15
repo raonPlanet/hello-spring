@@ -1,4 +1,4 @@
-package controller;
+package hello.hellospring.controller;
 
 import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
