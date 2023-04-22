@@ -29,16 +29,16 @@ public class MemberService {
 //        result.ifPresent(m->{
 //            throw new IllegalStateException("이미 존재하는 회원입니다.");
 //        });
-        long start = System.currentTimeMillis();
-        try {
+//        long start = System.currentTimeMillis();
+//        try {
             validateDupulicatemember(member);
             memberRepository.save(member);
             return member.getId();
-        } finally {
-            long finish = System.currentTimeMillis();
-            long timeMs = finish - start;
-            System.out.println("join = " + timeMs + "ms");
-        }
+//        } finally {
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("join = " + timeMs + "ms");
+//        }
 
     }
 
